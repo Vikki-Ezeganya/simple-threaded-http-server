@@ -6,7 +6,7 @@ import java.net.Socket;
 
 public class Server {
     static final int PORT = 5000;
-   private ServerSocket server;
+    private ServerSocket server;
 
     public void handleRequest() {
         try {
@@ -31,7 +31,7 @@ public class Server {
         }
         finally {
             try{
-                if(server !=null){
+                if(server != null){
                     server.close();
                 }
             }
